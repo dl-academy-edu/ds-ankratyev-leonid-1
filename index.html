@@ -16,7 +16,7 @@
                     <li><a href="#">About us</a></li>
                 </ul>
             </nav>
-            <img src="image/svg/search.svg" alt="search" class="search"><a href="contact us.html">Contact us</a>
+            <img src="image/svg/search.svg" alt="search" class="search"><a href="contact-us.html">Contact us</a>
         </header>
         <main>
             <section class="banner">
@@ -126,7 +126,7 @@
             <div class="information block">
                 <div class="footer-header">Customer Information</div>
                 <ul>
-                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                     <li><a href="#">Shipping & Returns</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -166,5 +166,28 @@
                 </ul>
             </div>    
         </footer>
+        <div class="window-modal">
+            <form action="#" method="post" class="sender">
+                <fieldset>
+                    <label for="contant-name">Name</label>
+                    <input required type="text" name="name" id="contant-name" placeholder="Ivan Ivanov">
+                </fieldset>
+                <fieldset>
+                    <label for="contact-tel">Phone</label>
+                    <input required type="tel" name="number" id="contact-tel">
+                    <label for="contact-email">Email</label>
+                    <input required type="email" name="email" id="contact-email">
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea required  name="comment" id="message"></textarea>
+                </fieldset>
+                <fieldset>
+                <input required type="checkbox" name="clicking" id="agreement" value="unchecked">
+                <label for="agreement">By clicking on the button, you consent to the processing of your personal data</label>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </body>
     </html>
