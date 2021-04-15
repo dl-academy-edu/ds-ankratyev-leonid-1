@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style-footer-header.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/toys.min.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style-header-footer.css"> 
-    <link rel="stylesheet" href="/css/contact.min.css">
-    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <title>Toy for kids</title>
 </head>
 <body>
     <header class="header container">
@@ -25,7 +25,9 @@
         <a class="contact-btn hover-a" href="contact-us.html">Contact us</a>
     </header>
     <div class="container">
-        <h1 class="title">Contact us</h1>
+        <div class="title">
+            <h1>Toy for kids</h1>
+        </div>
         <div class="group">
             <ol class="breadcrumb outline">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -33,45 +35,136 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
                     </svg>
                 </div>
-                <li class="breadcrumb-item active">Contact Us</li>
+                <li class="breadcrumb-item"><a href="catalog.html">Catalog</a></li>
+                <div class="row"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                    </svg>
+                </div>
+                <li class="breadcrumb-item active">Toys</li>
             </ol>  
         </div>
     </div>
-    <div class="container main">
-        <div class="popup-form">
-            <h1 class="hidden">Modal Window</h1>
-            <form action="" method="POST" class="contact-form">
-                <div class="block-one">
-                    <label for="name">Name</label>
-                    <input required type="text" id="name">
+    <div class="filter-bg">
+        <div class="filter container">
+            <div class="slider-list">
+                <div class="slider">
+                    <div class="filter-title-1">Cost</div>
+                    <input type="range" min="0" max="500" step="1" value="250">
                 </div>
-                <div class="block-two">
-                    <div class="item-one">
-                        <label for="phone">Phone</label>
-                        <input required type="tel" id="phone">
-                    </div>
-                    <div class="item-two">
-                        <label for="emailform">Email</label>
-                        <input required type="email@" id="emailform">
-                    </div>
+                <div class="range-value">
+                    <div class="0">0</div>
+                    <div class="500">500</div>
                 </div>
-                <div class="comment">
-                    <label for="message">Message</label>
-                    <textarea name="text" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div class="check-agree">
-                    <input required type="checkbox" id="agree">
-                    <label for="agree">By clicking on the button, you consent to the processing of your personal data</label>
-                </div>
-                    <button class="btn-submit">submit</button>
-            </form>
-        </div>
-        <div class="text">
-            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-            <h2 class="title-bot">An expert is waiting to help you!</h2>
+            </div>
+            <div class="check">
+                <div class="filter-title-2">Color</div>
+                <ul class="outline color-check">
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="black" id="black" value="black">
+                        <label for="black">Black</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="blue" id="blue" value="blue">
+                        <label for="blue">Blue</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="green" id="green" value="green">
+                        <label for="green">Green</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="white" id="white" value="white">
+                        <label for="white">White</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="delivery">
+                <div class="filter-title-3">Delivery</div>
+                <ul class="outline shop-list">
+                    <li>
+                        <input type="radio" class="custom-radio" name="dva" id="dva1"/>
+                        <label for="dva1">Free shipping</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="custom-radio" name="dva" id="dva2"/>
+                        <label for="dva2">Fast shipping</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="amount">
+                <div class="filter-title-4">Amount</div>
+                <label for="quantity" class="quant"></label>
+                <input type="radio" name="quantity" class="quant1">
+                <input type="radio" name="quantity" class="quant2">
+                <input type="radio" name="quantity" class="quant3">
+            </div>
+            <div>
+                <button class="btn-apply">apply</button>
+            </div>
         </div>
     </div>
+    <main class=" container">
+        <div class="product">
+            <div class="product-1">
+                <article class="shark">
+                    <a href=""><img src="image/product/shark.png" class="shark-img" alt="shark"><h2>sharky bean bag chair cover</h2></a>
+                    <span class="price">$60.00 USD</span>
+                </article>
+                <article class="framework">
+                    <a href=""><img src="image/product/framework.png" alt="framework"><h2>brass deco frames</h2></a>
+                    <span class="price">$66.00 USD</span>
+                </article>
+                <article class="apron">
+                    <a href=""><img src="image/product/apron.png" alt="apron"><h2>cibo full apron</h2></a>
+                    <span class="price">$60.00 USD</span>
+                </article>
+            </div>
+            <div class="product-2">
+                <article class="gumball">
+                    <a href=""><img src="image/product/gumball.png" alt="gumball"><h2>gatcha gatcha gumball machine</h2></a>
+                    <span class="price">$56.00 USD</span>
+                </article>
+                <article class="christmas-advent">
+                    <a href=""><img src="image/product/christmas-advent.png" alt="christmas-advent"><h2>christmas advent scented candle</h2></a>
+                    <span class="price">$29.00 USD</span>
+                </article>
+                <article class="tangle-tea">
+                    <a href=""><img src="image/product/tangle-tea.png" alt="tangle-tea"><h2>tangle spinning tea light</h2></a>
+                    <span class="price">$56.00 USD</span>
+                </article>
+            </div>
+            
+        </div>
+        <div class="swipe">
+            <div class="prev">
+                <a href="#"><img src="image/button/left.a.png" alt="left"></a>
+            </div>
+            <div class="page">
+                <ul class="outline">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                </ul>
+                <ul class="outline">
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                </ul>
+                <ul class="outline">
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                </ul>
+                <ul class="outline">
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="next">
+                <a href="#"><img src="image/button/right.a.png" alt=""></a>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="container footer-container">
             <div class="footer-nav">
@@ -158,5 +251,6 @@
             </div>
         </div>   
     </footer>
+    <script src="/js/toys.js"></script>
 </body>
 </html>

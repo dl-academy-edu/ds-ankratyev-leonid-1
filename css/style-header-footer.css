@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #1E0606;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.outline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hover-logo:hover {
+    opacity: 0.5;
+}
+
+.hover-logo:active {
+    opacity: 0.2;
+}
+
+
+/* HEADER */
+.header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    margin: 0 auto 0 60px;
+}
+
+.hover-logo:hover {
+    opacity: 0.6;
+}
+
+.hover-logo:active {
+    opacity: 0.3;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.hover-a:hover {
+    opacity: 0.6;
+}
+
+.hover-a:active {
+    opacity: 0.3;
+}
+
+.header-item {
+    margin-right: 20px;
+}
+
+.contact-btn {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    background: none;
+}
+
+.search {
+    margin-right: 24px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background: #434343;
+    margin-top: 11px;
+}
+
+.footer-container {
+    padding: 0;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+.footer-header {
+    color: #AAAAAA;
+    margin-bottom: 23px;
+    margin-top: 100px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-block {
+    width: 100%;
+}
+
+.connect-block {
+    padding: 0 0 0 17px;
+}
+
+.border {
+    border-bottom:1px solid #666666;
+    margin-bottom: 28px;
+    width: 380px;
+}
+
+.item-footer {
+    margin-bottom: 15px;
+}
+
+.social-connect {
+    display: flex;
+}
+
+.social-connect li {
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+
+/* STYLE EMAIL */
+
+
+.form-mail {
+    width: 383px;
+}
+
+input[type=email] {
+    padding: 10px;
+    background: #666666;
+    margin: 0;
+    width: 299px;
+    height: 40px;
+    border: none;
+}
+
+input[type="email"]::placeholder {
+    color: #EBEBEB;
+}
+
+.email-btn {
+    margin-left: -3px;
+    width: 81px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.item-footer {
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    flex: 1 1 33.33%;
+
+}
+
+.footer-lower-block {
+    display: flex;
+    margin-top: 23px;
+    padding-bottom: 100px;
+}
+
+.border-lower {
+    border-top: 1px solid #666666;
+    margin-top: 11px;
+}
+
+.information-block {
+    margin-left: 15px;
+}
+
+.center-item {
+    padding-left: 7px;
+}
+
+.last-item {
+    padding-left: 13px;
+}
+
+
+
+/* STAR RAITING */
+
+
+.rating-block {
+    display: flex;
+}
+
+.rait { 
+    display: flex;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 230px;
+    margin-top: -7px;
+    padding-right: 121px;
+}
+
+.rating-area:not(:checked) > input {
+	display: none;
+}
+
+.rating-area:not(:checked) > label {
+	float: right;
+	padding: 0;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #C29974;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+	position: relative;
+}
+
+.rating-block:hover {
+    color: #C29974
+}
+
+.social-connect img:hover {
+    opacity: 0.6;
+    background: #000;
+    border-radius: 15px;
+}
+
+.social-connect img:active {
+    opacity: 0.3;
+    background: #000;
+    border-radius: 15px;
+}
+
+.hover-footer-lower a {
+    color: rgb(129, 129, 129);
+}
+
+.hover-footer a:hover {
+    color: rgb(95, 95, 95);
+}
+
+.hover-footer-lower a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
