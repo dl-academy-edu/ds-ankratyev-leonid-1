@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style-footer-header.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/toys.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/toys.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
@@ -92,10 +92,20 @@
             </div>
             <div class="amount">
                 <div class="filter-title-4">Amount</div>
-                <label for="quantity" class="quant"></label>
-                <input type="radio" name="quantity" class="quant1">
-                <input type="radio" name="quantity" class="quant2">
-                <input type="radio" name="quantity" class="quant3">
+                <div class="block-radio">
+                    <div class="form_radio_btn radio-1">
+                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                        <label for="radio-1" class="radio-1">0-5</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-2" type="radio" name="radio" value="2">
+                        <label for="radio-2">10-20</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-3" type="radio" name="radio" value="3">
+                        <label for="radio-3">20-50</label>
+                    </div>
+                </div>
             </div>
             <div>
                 <button class="btn-apply">apply</button>

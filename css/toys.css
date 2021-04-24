@@ -30,13 +30,56 @@ input[type=checkbox]:focus+label::before {
 }
 
 input[type=checkbox]:not(:checked)+label::before {
-    border-color: #664d38;
+    border-color: #C29974;
 }
 
 input[type=checkbox]:checked+label::before {
     border-color: #C29974;
     background-image: url("/image/button/checkbox.png");
     background-size: 15px 15px;
+}
+
+.check {
+    margin-right: 130px;
+}
+
+/* RADIO AMOUNT */
+
+.block-radio {
+    display: flex;
+    margin-right: 60px;
+}
+
+.filter-title-4 {
+    margin-bottom: 15px;
+}
+
+.form_radio_btn {
+	display: inline-block;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+    width: 80px;
+	padding: 0 15px;
+	line-height: 34px;
+    background:#fff;
+	user-select: none;
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+	background: #F3D0DB;
+}
+
+.form_radio_btn label:hover {
+	background: #EDDEEB;
+}
+
+.radio-1 label {
+    padding-left: 25px;
 }
 
 
@@ -104,6 +147,10 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
+.delivery {
+    margin-right: 69px;
+}
+
 .slider-list {
     margin-right: 110px;
 }
@@ -123,21 +170,12 @@ input[type=range]::-webkit-slider-thumb {
     margin-bottom: 14px;
 }
 
-.delivery {
-    margin-left: 122px;
-}
-
 .shop-list {
     margin-top: 12px;
 }
 
 .shop-list li{
     margin-bottom: 10px;
-}
-
-.amount {
-    margin-left: 65px;
-    margin-right: 240px;
 }
 
 .custom-radio {
@@ -196,7 +234,6 @@ input[type=range]::-webkit-slider-thumb {
 .custom-radio:disabled+label::before {
     background-color: #e9ecef;
 }
-
 
 .quant1,
 .quant2,
