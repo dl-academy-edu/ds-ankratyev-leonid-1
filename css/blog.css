@@ -16,6 +16,10 @@ h2 {
 .title-blog {
     margin-top: 60px;
     margin-bottom: 15px;
+    Font-family: Montserrat;
+    Font-style: Bold;
+    Font-size: 40px;
+    Line-height: 49px;
 }
 
 .row {

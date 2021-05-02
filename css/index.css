@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     line-height: 22px;
 }
+
 h1,
 h2,
 h3 {
@@ -44,6 +45,7 @@ img {
 }
 
 .button {
+    transition: 0.3s;
     color: #FFFFFF;
     background: #000;
     text-align: center;
@@ -88,6 +90,10 @@ img {
 .header-list {
     display: flex;
     align-items: center;
+}
+
+.hover-a {
+    transition: 0.3s;
 }
 
 .hover-a:hover {
@@ -216,7 +222,7 @@ img {
     margin: 0 auto 7px;
 }
 
-.category-hover:hover {
+.category-hover:hover >h3 {
     text-decoration: underline;
 }
 
@@ -242,12 +248,12 @@ img {
 /* CATEGORY FOOTER */
 
 .swipe {
-    border: none;
-    background: rgba(112, 187, 220, 0.2);
-    width: 37px;
-    height: 37px;
+    transition: 0.3s;
+    background: transparent;
+    border: 1px solid transparent;
     margin: 0 auto;
     cursor: pointer;
+    padding: 0;
 }
 
 .swipe-item {
@@ -257,40 +263,21 @@ img {
 .swipe-text {
     max-width: 580px;
     width: 100%;
-    margin: 29px 0 10px 21px;
+    margin: 29px 0 10px 19px;
 }
 
-.swipe-right {
-    padding: 4px;
+
+.swipe:focus {
+    border:1px solid #C29974;
 }
 
-.swipe-left {
-    transform: scale(-1,1);
-    padding: 4px;
+.swipe:hover {
+    border: 1px solid #C29974;
+    opacity: 0.7;
 }
 
-.swipe-right svg:hover {
-    stroke: #C29974;
-    stroke-width: 2;
-}
-
-.swipe-left svg:hover {
-    stroke: #C29974;
-    stroke-width: 2;
-}
-
-.swipe-left svg:active {
-    stroke: #C29974;
+.swipe:active {
     opacity: 0.5;
-    stroke-width: 2;
-    box-sizing: border-box;
-}
-
-.swipe-right svg:active {
-    stroke: #C29974;
-    opacity: 0.5;
-    stroke-width: 2;
-    box-sizing: border-box;
 }
 
 .swipe-btn {
@@ -313,7 +300,7 @@ img {
     text-transform: uppercase;
     font-size: 38px;
     line-height: 46px;
-    margin: 0;
+    margin: 0 0 5px;
 }
 
 .delivery-item {
@@ -330,7 +317,8 @@ img {
 }
 
 .target {
-    margin-top: 30px;
+    margin-top: 17px;
+    width: 82%;
 }
 
 .hidden-list {
@@ -345,7 +333,6 @@ img {
     max-height: 40px;
     height: 100%;
     background: #000;
-    margin: 10px 0 0 0;
     text-align: center;
     padding-top: 9px;
     text-transform: uppercase;
@@ -353,6 +340,36 @@ img {
 
 .item {
     margin-top: -12px;
+}
+
+.form_radio_btn {
+	display: block;
+}
+
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+    transition: 0.3s;
+    width: 55%;
+	display: inline-block;
+	cursor: pointer;
+    margin-left: -50px;
+	padding:11px 200px 11px 50px;
+	line-height: 34px;
+	user-select: none;
+    Font-size: 26px;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: rgba(112, 187, 220, 0.2);
+    font-weight: bold;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+	background: rgba(112, 188, 220, 0.089);
 }
 
 
@@ -504,6 +521,8 @@ input[type=email] {
     width: 299px;
     height: 40px;
     border: none;
+    outline: none;
+    color: #fff;
 }
 
 input[type="email"]::placeholder {
@@ -567,7 +586,7 @@ input[type="email"]::placeholder {
 .rating-area {
 	overflow: hidden;
 	width: 230px;
-    margin-top: -7px;
+    margin-top: -5px;
     padding-right: 121px;
 }
 
@@ -582,7 +601,6 @@ input[type="email"]::placeholder {
 	font-size: 20px;
 	line-height: 32px;
 	color: lightgrey;
-	text-shadow: 1px 1px #bbb;
 }
 
 .rating-area:not(:checked) > label:before {
@@ -590,8 +608,7 @@ input[type="email"]::placeholder {
 }
 
 .rating-area > input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px #c60;
+	color: #C29974;;
 }
 
 .rating-area:not(:checked) > label:hover,
@@ -604,8 +621,7 @@ input[type="email"]::placeholder {
 .rating-area > input:checked ~ label:hover,
 .rating-area > input:checked ~ label:hover ~ label,
 .rating-area > label:hover ~ input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px goldenrod;
+	color: #C29974;
 }
 
 .rate-area > label:active {
@@ -613,13 +629,20 @@ input[type="email"]::placeholder {
 }
 
 .rating-block:hover {
-    color: #C29974
+    color: #C29974;
+}
+
+.social-connect img {
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.color-style {
+    color: #C29974;
 }
 
 .social-connect img:hover {
     opacity: 0.6;
-    background: #000;
-    border-radius: 15px;
 }
 
 .social-connect img:active {
@@ -630,6 +653,7 @@ input[type="email"]::placeholder {
 
 .hover-footer-lower a {
     color: rgb(129, 129, 129);
+    transition: 0.3s;
 }
 
 .hover-footer-lower a:hover {
@@ -774,30 +798,3 @@ input[type=checkbox]:checked+label::before {
 }
 
 
-.form_radio_btn {
-	display: block;
-}
-
-.form_radio_btn input[type=radio] {
-	display: none;
-}
-.form_radio_btn label {
-	display: inline-block;
-	cursor: pointer;
-    margin-left: -50px;
-	padding:11px 200px 11px 50px;
-	line-height: 34px;
-	user-select: none;
-    Font-size: 26px;
-}
-
-/* Checked */
-.form_radio_btn input[type=radio]:checked + label {
-	background: rgba(112, 187, 220, 0.2);
-    font-weight: bold;
-}
-
-/* Hover */
-.form_radio_btn label:hover {
-	background: rgba(112, 188, 220, 0.089);
-}
