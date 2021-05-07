@@ -572,65 +572,7 @@ input[type="email"]::placeholder {
 
 
 
-/* STAR RAITING */
 
-
-.rating-block {
-    display: flex;
-}
-
-.rait { 
-    display: flex;
-}
-
-.rating-area {
-	overflow: hidden;
-	width: 230px;
-    margin-top: -5px;
-    padding-right: 121px;
-}
-
-.rating-area:not(:checked) > input {
-	display: none;
-}
-
-.rating-area:not(:checked) > label {
-	float: right;
-	padding: 0;
-	cursor: pointer;
-	font-size: 20px;
-	line-height: 32px;
-	color: lightgrey;
-}
-
-.rating-area:not(:checked) > label:before {
-	content: '★';
-}
-
-.rating-area > input:checked ~ label {
-	color: #C29974;;
-}
-
-.rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label {
-	color: #C29974;
-}
-
-.rating-area > input:checked + label:hover,
-.rating-area > input:checked + label:hover ~ label,
-.rating-area > input:checked ~ label:hover,
-.rating-area > input:checked ~ label:hover ~ label,
-.rating-area > label:hover ~ input:checked ~ label {
-	color: #C29974;
-}
-
-.rate-area > label:active {
-	position: relative;
-}
-
-.rating-block:hover {
-    color: #C29974;
-}
 
 .social-connect img {
     transition: 0.3s;

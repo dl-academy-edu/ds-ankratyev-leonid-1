@@ -221,6 +221,10 @@ input[type="email"]::placeholder {
 /* STAR RAITING */
 
 
+.color-style {
+    color: #C29974;
+}
+
 .rating-block {
     display: flex;
 }
@@ -246,8 +250,7 @@ input[type="email"]::placeholder {
 	cursor: pointer;
 	font-size: 20px;
 	line-height: 32px;
-	color: lightgrey;
-	text-shadow: 1px 1px #bbb;
+	color: #fff;
 }
 
 .rating-area:not(:checked) > label:before {
@@ -255,8 +258,7 @@ input[type="email"]::placeholder {
 }
 
 .rating-area > input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px #c60;
+	color: #C29974;
 }
 
 .rating-area:not(:checked) > label:hover,
@@ -269,8 +271,7 @@ input[type="email"]::placeholder {
 .rating-area > input:checked ~ label:hover,
 .rating-area > input:checked ~ label:hover ~ label,
 .rating-area > label:hover ~ input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px goldenrod;
+	color: #C29974;
 }
 
 .rate-area > label:active {
