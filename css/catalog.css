@@ -68,29 +68,10 @@
     margin: 0 auto 7px;
 }
 
-.apparel-title:hover {
+.category-hover:hover >h3 {
     text-decoration: underline;
 }
 
-.toys-title:hover {
-    text-decoration: underline;
-}
-
-.shop-title:hover {
-    text-decoration: underline;
-}
-
-.accessories-title:hover {
-    text-decoration: underline;
-}
-
-.sale-title:hover {
-    text-decoration: underline;
-}
-
-.title-apparel:hover {
-    text-decoration: underline;
-}
 
 .sale-title,
 .accessories-title,

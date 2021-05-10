@@ -44,20 +44,7 @@ img {
     display: block;
 }
 
-.button {
-    transition: 0.3s;
-    color: #FFFFFF;
-    background: #000;
-    text-align: center;
-}
 
-.button:hover {
-    background: #C29974;
-}
-
-.button:active {
-    background: #CFAF91;
-}
 
 .crimson {
     font-family: Crimson Text;
@@ -93,7 +80,7 @@ img {
 }
 
 .hover-a {
-    transition: 0.3s;
+    transition: opacity 0.30s ease-in-out;
 }
 
 .hover-a:hover {
@@ -186,6 +173,13 @@ img {
     padding: 11px ;
 }
 
+.text-size {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
 /* CATEGORY */
 
 .category-title {
@@ -248,12 +242,13 @@ img {
 /* CATEGORY FOOTER */
 
 .swipe {
-    transition: 0.3s;
+    transition: opacity,border 0.3s ease-in-out;
     background: transparent;
     border: 1px solid transparent;
     margin: 0 auto;
     cursor: pointer;
     padding: 0;
+    margin-top: 31px;
 }
 
 .swipe-item {
@@ -330,12 +325,14 @@ img {
     display: block;
     max-width: 100%;
     width: 149px;
-    max-height: 40px;
-    height: 100%;
     background: #000;
     text-align: center;
-    padding-top: 9px;
+    padding: 9px 0;
     text-transform: uppercase;
+}
+
+.delivery img {
+    align-self: center;
 }
 
 .item {
@@ -350,8 +347,8 @@ img {
 	display: none;
 }
 .form_radio_btn label {
-    transition: 0.3s;
-    width: 55%;
+    transition: background 0.3s ease-in-out;;
+    width: 326px;
 	display: inline-block;
 	cursor: pointer;
     margin-left: -50px;
@@ -570,14 +567,6 @@ input[type="email"]::placeholder {
     padding-left: 13px;
 }
 
-
-
-
-
-.social-connect img {
-    transition: 0.3s;
-    border-radius: 15px;
-}
 
 .color-style {
     color: #C29974;

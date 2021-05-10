@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header container">
-        <a href="/index.html"><img src="image/logo/union.svg" alt="logo" class="header-logo hover-a"></a>
+        <a href="/index.html"><img src="image/logo/logo.svg" alt="logo" class="header-logo hover-a"></a>
         <nav class="header-nav">
             <ul class="outline header-list">
                 <li class="header-item"><a href="blog.html" class="hover-a">blog</a></li>
@@ -42,19 +42,19 @@
             <div class="category-item-1">
                 <ul class="outline category-1">
                     <li class="apparel">
-                        <a href="#">
+                        <a class="category-hover" href="#">
                             <img src="image/category/apparelkids.jpg" alt="APPAREL KIDS">
                             <h3 class="apparel-title">APPAREL KIDS</h3>
                         </a>
                     </li>
                     <li class="shop">
-                        <a href="#">
+                        <a class="category-hover" href="#">
                             <img src="image/category/holidayshop.jpg" class="hover-li" alt="HOLIDAY SHOP">
                             <h3 class="shop-title">HOLIDAY SHOP</h3>
                         </a>
                     </li>
                     <li class="toys">
-                        <a href="toys.html">
+                        <a class="category-hover" href="toys.html">
                             <img src="image/category/toys.jpg" alt="TOYS">
                             <h3 class="toys-title">TOYS</h3>
                         </a>
@@ -64,21 +64,19 @@
             <div class="category-item-2">
                 <ul class="outline category-2">
                     <li class="accessories">
-                        <a href="#">
+                        <a class="category-hover" href="#">
                             <img src="image/category/accessories.jpg" alt="ACCESSORIES">
-                        </a>
-                        <a href="#">
                             <h3 class="accessories-title">ACCESSORIES</h3>
                         </a>
                     </li>
                     <li class="sale">
-                        <a href="#">
+                        <a class="category-hover" href="#">
                             <img src="image/category/sale.jpg" alt="SALE">
                             <h3 class="sale-title">SALE</h3>
                         </a>
                     </li>
                     <li class="apparel-adults">
-                        <a href="#">
+                        <a class="category-hover" href="#">
                             <img src="image/category/appareladults.png" alt="APPAREL ADULTS">
                             <h3 class="title-apparel">APPAREL ADULTS</h3>
                         </a>
@@ -134,24 +132,24 @@
                     <div class="border"></div>
                     <form action="#" class="form-mail">
                         <input type="email" placeholder="Email">
-                        <button type="submit" class="email-btn">Join</button>
+                        <button type="submit" class="button email-btn">Join</button>
                     </form>
                     <ul class="social-connect outline">
                         <li>
-                            <a href="https://www.facebook.com" target="_blank">
-                            <img src="image/social/facebook.png" alt="facebook" class="facebook hover-a"></a>
+                            <a href="https://www.facebook.com" target="_blank" class="facebook hover-a">
+                            <img src="image/social/facebook.png" alt="facebook"></a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com" target="_blank">
-                            <img src="image/social/twitter.png" alt="twitter" class="twitter hover-a"></a>
+                            <a href="https://www.twitter.com" target="_blank" class="twitter hover-a">
+                            <img src="image/social/twitter.png" alt="twitter"></a>
                         </li>
                         <li>
-                            <a href="https://www.pinterest.ru" target="_blank">
-                            <img src="image/social/pinterest.png" alt="Pinterest" class="pinterest hover-a"></a>
+                            <a href="https://www.pinterest.ru" target="_blank" class="pinterest hover-a">
+                            <img src="image/social/pinterest.png" alt="Pinterest"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com" target="_blank">
-                            <img src="image/social/instagram.png" alt="instagram" class="instagram hover-a"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram hover-a">
+                            <img src="image/social/instagram.png" alt="instagram"></a>
                         </li> 
                     </ul>
                 </div>
@@ -159,7 +157,8 @@
             <div class="footer-lower">
                 <div class="border-lower"></div>
                 <ul class="footer-lower-block outline">
-                    <li class="item-footer rating-block">Company Rating
+                    <li class="item-footer rating-block">
+                        <div class="rating-block__title">Company Rating</div> 
                         <div class="rating-area">
                             <input type="radio" id="star-5" name="rating" value="5">
                             <label for="star-5" title="Оценка «5»"></label>	

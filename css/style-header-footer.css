@@ -26,6 +26,7 @@ h6 {
 a {
     text-decoration: none;
     color: #1E0606;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .container {
@@ -46,6 +47,10 @@ a {
 
 .hover-logo:active {
     opacity: 0.2;
+}
+
+img {
+    transition: opacity 0.3s ease-in-out;
 }
 
 
@@ -154,6 +159,41 @@ footer a {
     margin-top: 25px;
 }
 
+.social-connect img {
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.button {
+    transition: background 0.3s ease-in-out;
+    color: #FFFFFF;
+    background: #000;
+    text-align: center;
+}
+
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.email-btn {
+    margin-left: -3px;
+    width: 81px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    font-family: Open sans;
+    font-size: 16px;
+}
+
 
 /* STYLE EMAIL */
 
@@ -168,11 +208,21 @@ input[type=email] {
     margin: 0;
     width: 299px;
     height: 40px;
-    border: none;
+    border: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+input[type=email]:hover {
+    border: 1px solid #FFFFFF;
+}
+
+input[type=email]:focus {
+    border: 1px solid #FFFFFF;
 }
 
 input[type="email"]::placeholder {
     color: #EBEBEB;
+    Font-size: 16px;
 }
 
 .email-btn {
@@ -190,7 +240,6 @@ input[type="email"]::placeholder {
     line-height: 22px;
     color: #fff;
     flex: 1 1 33.33%;
-
 }
 
 .footer-lower-block {
@@ -234,10 +283,10 @@ input[type="email"]::placeholder {
 }
 
 .rating-area {
-	overflow: hidden;
-	width: 230px;
-    margin-top: -7px;
-    padding-right: 121px;
+    line-height: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .rating-area:not(:checked) > input {
@@ -245,25 +294,31 @@ input[type="email"]::placeholder {
 }
 
 .rating-area:not(:checked) > label {
-	float: right;
-	padding: 0;
 	cursor: pointer;
-	font-size: 20px;
-	line-height: 32px;
-	color: #fff;
 }
 
 .rating-area:not(:checked) > label:before {
-	content: '★';
+	content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('/image/svg/star.png') no-repeat;
+    z-index: 0;
+}
+
+.rating-block__title {
+    padding-right: 28px;
 }
 
 .rating-area > input:checked ~ label {
-	color: #C29974;
+    background: url('/image/svg/star-hover.png') no-repeat;
+    z-index: 2;
 }
 
 .rating-area:not(:checked) > label:hover,
 .rating-area:not(:checked) > label:hover ~ label {
-	color: #C29974;
+    background: url('/image/svg/star-hover.png') no-repeat;
+    z-index: 2;
 }
 
 .rating-area > input:checked + label:hover,
@@ -271,7 +326,8 @@ input[type="email"]::placeholder {
 .rating-area > input:checked ~ label:hover,
 .rating-area > input:checked ~ label:hover ~ label,
 .rating-area > label:hover ~ input:checked ~ label {
-	color: #C29974;
+    background: url('/image/svg/star-hover.png') no-repeat;
+    z-index: 2;
 }
 
 .rate-area > label:active {

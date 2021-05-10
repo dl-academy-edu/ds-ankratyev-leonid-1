@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/css/style-header-footer.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/css/blog.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/blog.css" type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="/css/normalize.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="header container">
-            <a href="/index.html"><img src="image/logo/union.svg" alt="logo" class="header-logo hover-a"></a>
+            <a href="/index.html"><img src="image/logo/logo.svg" alt="logo" class="header-logo hover-a"></a>
             <nav class="header-nav">
                 <ul class="outline header-list">
                     <li class="header-item"><a href="blog.html" class="hover-a">blog</a></li>
@@ -79,7 +79,7 @@
                 </article>
             </div>
             <div class="swipe">
-                <a href="#"><img src="image/button/left.a.png" alt="left"></a>
+                <a href="#"><img class="prev" src="image/button/left.a.png" alt="left"></a>
                 <div class="swipe-page">
                     <ul class="outline page-list">
                         <li>
@@ -102,7 +102,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#"><img src="image/button/right.a.png" alt=""></a>
+                <a href="#"><img class="next" src="image/button/right.a.png" alt=""></a>
             </div>
         </main>
         <footer>
@@ -146,24 +146,24 @@
                         <div class="border"></div>
                         <form action="#" class="form-mail">
                             <input type="email" placeholder="Email">
-                            <button type="submit" class="email-btn">Join</button>
+                            <button type="submit" class="button email-btn">Join</button>
                         </form>
                         <ul class="social-connect outline">
                             <li>
-                                <a href="https://www.facebook.com" target="_blank">
-                                <img src="image/social/facebook.png" alt="facebook" class="facebook hover-a"></a>
+                                <a href="https://www.facebook.com" target="_blank" class="facebook hover-a">
+                                <img src="image/social/facebook.png" alt="facebook"></a>
                             </li>
                             <li>
-                                <a href="https://www.twitter.com" target="_blank">
-                                <img src="image/social/twitter.png" alt="twitter" class="twitter hover-a"></a>
+                                <a href="https://www.twitter.com" target="_blank" class="twitter hover-a">
+                                <img src="image/social/twitter.png" alt="twitter"></a>
                             </li>
                             <li>
-                                <a href="https://www.pinterest.ru" target="_blank">
-                                <img src="image/social/pinterest.png" alt="Pinterest" class="pinterest hover-a"></a>
+                                <a href="https://www.pinterest.ru" target="_blank" class="pinterest hover-a">
+                                <img src="image/social/pinterest.png" alt="Pinterest"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com" target="_blank">
-                                <img src="image/social/instagram.png" alt="instagram" class="instagram hover-a"></a>
+                                <a href="https://www.instagram.com" target="_blank" class="instagram hover-a">
+                                <img src="image/social/instagram.png" alt="instagram"></a>
                             </li> 
                         </ul>
                     </div>
@@ -171,7 +171,8 @@
                 <div class="footer-lower">
                     <div class="border-lower"></div>
                     <ul class="footer-lower-block outline">
-                        <li class="item-footer rating-block">Company Rating
+                        <li class="item-footer rating-block">
+                            <div class="rating-block__title">Company Rating</div> 
                             <div class="rating-area">
                                 <input type="radio" id="star-5" name="rating" value="5">
                                 <label for="star-5" title="Оценка «5»"></label>	

@@ -45,6 +45,8 @@ input[type=checkbox]:checked+label::before {
     margin-right: 124px;
 }
 
+
+
 /* RADIO AMOUNT */
 
 .block-radio {
@@ -70,6 +72,25 @@ input[type=checkbox]:checked+label::before {
 	line-height: 34px;
     background:#fff;
 	user-select: none;
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+.next {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.next:hover {
+    opacity: 0.6;
+}
+
+.prev {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.prev:hover {
+    opacity: 0.6;
 }
 
 .form_radio_btn input[type=radio]:checked + label {
@@ -313,7 +334,7 @@ article {
     width: 380px;
 }
 
-button {
+.btn-apply {
     height: 40px;
     width: 95px;
     background: #000;
@@ -322,13 +343,14 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     border: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
-button:hover {
+.btn-apply:hover {
     opacity: 0.6;
 }
 
-button:active {
+.btn-apply:active {
     opacity: 0.3;
 }
 

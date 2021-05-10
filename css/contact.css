@@ -102,6 +102,7 @@ input[type=checkbox]:checked+label::before {
     line-height: 22px;
     text-transform: uppercase;
     cursor: pointer;
+    border: none;
 }
 
 .hidden {
