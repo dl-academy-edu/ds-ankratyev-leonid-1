@@ -87,13 +87,3 @@ window.addEventListener('keydown', function(cls){
 	}
 })
 
-
-	var buttonArea = document.getElementsByClassName('rating-area');
-	var textCompany = document.getElementsByClassName('rating-block');
-	buttonArea[0].onclick = function() {
-		textCompany[0].classList.add("color-style");
-	}
-	buttonArea[1].onclick = function() {
-		textCompany[0].classList.remove("color-style");
-	}
-
