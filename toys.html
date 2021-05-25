@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style-header-footer.css">
-    <link rel="stylesheet" href="/css/catalog.css" type="text/css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="/css/style-header-footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/toys.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Catalog</title>
+    <link rel="stylesheet" href="normalize.css">
+    <title>Toy for kids</title>
 </head>
 <body>
     <header class="header container">
@@ -24,9 +24,9 @@
         <img src="image/svg/search.svg" alt="search" class="search hover-a">
         <a class="contact-btn hover-a" href="contact-us.html">Contact us</a>
     </header>
-    <main class="container">
+    <div class="container">
         <div class="title">
-            <h1>Category Products</h1>
+            <h1>Toy for kids</h1>
         </div>
         <div class="group">
             <ol class="breadcrumb outline">
@@ -35,60 +35,144 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
                     </svg>
                 </div>
-                <li class="breadcrumb-item active">Catalog</li>
+                <li class="breadcrumb-item"><a href="catalog.html">Catalog</a></li>
+                <div class="row"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                    </svg>
+                </div>
+                <li class="breadcrumb-item active">Toys</li>
             </ol>  
         </div>
-        <div class="category">
-            <div class="category-item-1">
-                <ul class="outline category-1">
-                    <li class="apparel">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/apparelkids.jpg" alt="APPAREL KIDS">
-                            <h3 class="apparel-title">APPAREL KIDS</h3>
-                        </a>
+    </div>
+    <div class="filter-bg">
+        <div class="filter container">
+            <div class="slider-list">
+                <div class="slider">
+                    <div class="filter-title-1">Cost</div>
+                    <input type="range" min="0" max="500" step="1" value="250">
+                </div>
+                <div class="range-value">
+                    <div class="0">0</div>
+                    <div class="500">500</div>
+                </div>
+            </div>
+            <div class="check">
+                <div class="filter-title-2">Color</div>
+                <ul class="outline color-check">
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="black" id="black" value="black">
+                        <label for="black">Black</label>
                     </li>
-                    <li class="shop">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/holidayshop.jpg" class="hover-li" alt="HOLIDAY SHOP">
-                            <h3 class="shop-title">HOLIDAY SHOP</h3>
-                        </a>
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="blue" id="blue" value="blue">
+                        <label for="blue">Blue</label>
                     </li>
-                    <li class="toys">
-                        <a class="category-hover" href="toys.html">
-                            <img src="image/category/toys.jpg" alt="TOYS">
-                            <h3 class="toys-title">TOYS</h3>
-                        </a>
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="green" id="green" value="green">
+                        <label for="green">Green</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="custom-checkbox" name="white" id="white" value="white">
+                        <label for="white">White</label>
                     </li>
                 </ul>
             </div>
-            <div class="category-item-2">
-                <ul class="outline category-2">
-                    <li class="accessories">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/accessories.jpg" alt="ACCESSORIES">
-                            <h3 class="accessories-title">ACCESSORIES</h3>
-                        </a>
+            <div class="delivery">
+                <div class="filter-title-3">Delivery</div>
+                <ul class="outline shop-list">
+                    <li>
+                        <input type="radio" class="custom-radio" name="dva" id="dva1"/>
+                        <label for="dva1">Free shipping</label>
                     </li>
-                    <li class="sale">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/sale.jpg" alt="SALE">
-                            <h3 class="sale-title">SALE</h3>
-                        </a>
-                    </li>
-                    <li class="apparel-adults">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/appareladults.png" alt="APPAREL ADULTS">
-                            <h3 class="title-apparel">APPAREL ADULTS</h3>
-                        </a>
+                    <li>
+                        <input type="radio" class="custom-radio" name="dva" id="dva2"/>
+                        <label for="dva2">Fast shipping</label>
                     </li>
                 </ul>
+            </div>
+            <div class="amount">
+                <div class="filter-title-4">Amount</div>
+                <div class="block-radio">
+                    <div class="form_radio_btn radio-1">
+                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                        <label for="radio-1" class="radio-1">0-5</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-2" type="radio" name="radio" value="2">
+                        <label for="radio-2">10-20</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-3" type="radio" name="radio" value="3">
+                        <label for="radio-3">20-50</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn-apply">apply</button>
             </div>
         </div>
-        <div class="description">
-            <h2 class="description-title">Product Description</h2>
-            <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-            <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-            <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    </div>
+    <main class=" container">
+        <div class="product">
+            <div class="product-1">
+                <article class="shark">
+                    <a href=""><img src="image/product/shark.png" class="shark-img" alt="shark"><h2>sharky bean bag chair cover</h2></a>
+                    <span class="price">$60.00 USD</span>
+                </article>
+                <article class="framework">
+                    <a href=""><img src="image/product/framework.png" alt="framework"><h2>brass deco frames</h2></a>
+                    <span class="price">$66.00 USD</span>
+                </article>
+                <article class="apron">
+                    <a href=""><img src="image/product/apron.png" alt="apron"><h2>cibo full apron</h2></a>
+                    <span class="price">$60.00 USD</span>
+                </article>
+            </div>
+            <div class="product-2">
+                <article class="gumball">
+                    <a href=""><img src="image/product/gumball.png" alt="gumball"><h2>gatcha gatcha gumball machine</h2></a>
+                    <span class="price">$56.00 USD</span>
+                </article>
+                <article class="christmas-advent">
+                    <a href=""><img src="image/product/christmas-advent.png" alt="christmas-advent"><h2>christmas advent scented candle</h2></a>
+                    <span class="price">$29.00 USD</span>
+                </article>
+                <article class="tangle-tea">
+                    <a href=""><img src="image/product/tangle-tea.png" alt="tangle-tea"><h2>tangle spinning tea light</h2></a>
+                    <span class="price">$56.00 USD</span>
+                </article>
+            </div>
+            
+        </div>
+        <div class="swipe">
+            <div class="prev">
+                <a href="#"><img src="image/button/left.a.png" alt="left"></a>
+            </div>
+            <div class="page">
+                <ul class="outline">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                </ul>
+                <ul class="outline">
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                </ul>
+                <ul class="outline">
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                </ul>
+                <ul class="outline">
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="next">
+                <a href="#"><img src="image/button/right.a.png" alt=""></a>
+            </div>
         </div>
     </main>
     <footer>
@@ -179,14 +263,14 @@
         </div>   
     </footer>
     <script>
-        var buttonArea = document.getElementsByClassName('rating-area');
-var textCompany = document.getElementsByClassName('rating-block');
-buttonArea[0].onclick = function() {
-    textCompany[0].classList.add("color-style");
-}
-buttonArea[1].onclick = function() {
-    textCompany[0].classList.remove("color-style");
-}
-</script>
+        	var buttonArea = document.getElementsByClassName('rating-area');
+	var textCompany = document.getElementsByClassName('rating-block');
+	buttonArea[0].onclick = function() {
+		textCompany[0].classList.add("color-style");
+	}
+	buttonArea[1].onclick = function() {
+		textCompany[0].classList.remove("color-style");
+	}
+    </script>
 </body>
 </html>
