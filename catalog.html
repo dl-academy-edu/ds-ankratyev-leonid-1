@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style-header-footer.css">
-    <link rel="stylesheet" href="/css/catalog.css" type="text/css">
+    <link rel="stylesheet" href="/css/style-header-footer.min.css">
+    <link rel="stylesheet" href="/css/catalog.min.css" type="text/css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Catalog</title>
 </head>
 <body>
-    <header class="header container">
-        <a href="/index.html"><img src="image/logo/logo.svg" alt="logo" class="header-logo hover-a"></a>
-        <nav class="header-nav">
-            <ul class="outline header-list">
-                <li class="header-item"><a href="blog.html" class="hover-a">blog</a></li>
-                <li class="header-item"><a href="catalog.html" class="hover-a">Catalog</a></li>
-                <li class="header-item"><a href="#" class="hover-a">About us</a></li>
-            </ul>
-        </nav>
-        <img src="image/svg/search.svg" alt="search" class="search hover-a">
-        <a class="contact-btn hover-a" href="contact-us.html">Contact us</a>
+    <header class="container">
+        <div class="header">
+            <div class="logo">
+                <a class="a-hover" href="/index.html"><img src="/image/logo/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header-nav">
+                <ul class="outline">
+                    <li><a  class="a-hover" href="#">blog</a></li>
+                    <li><a  class="a-hover" href="#">catalog</a></li>
+                    <li><a  class="a-hover" href="#">about us</a></li>
+                </ul>
+            </div>
+            <div class="search-contact">
+                <div class="search">
+                    <img class="a-hover" src="/image/svg/search.svg" alt="search">
+                </div>
+                <div class="contact">
+                    <a  class="a-hover" href="#">contact us</a>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="container">
         <div class="title">
-            <h1>Category Products</h1>
+            <h1 id="h1">Category Products</h1>
         </div>
         <div class="group">
             <ol class="breadcrumb outline">
@@ -91,102 +101,92 @@
             <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
         </div>
     </main>
-    <footer>
-        <div class="container footer-container">
+    <footer class="footer">
+        <div class="container">
             <div class="footer-nav">
-                <div class="nav-block footer-block">
-                    <div class="footer-header">
-                        Navigation
+                <div class="footer-block">
+                    <div class="footer-top">
+                        <div class="footer-top-title">Navigation</div>
+                        <div class="footer-top-border"></div>
                     </div>
-                    <div class="border"></div>
-                    <div class="nav-pan">
+                    <div class="footer-list">
                         <ul class="outline">
-                            <li class="item-footer"><a href="#" class="hover-a">About Us</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">blog</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Design Services</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Featured On</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">2018 Holiday Catalog</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Shop By Designer</a></li>
+                            <li><a  class="a-hover" href="#">About Us</a></li>
+                            <li><a  class="a-hover" href="#">Blog</a></li>
+                            <li><a  class="a-hover" href="#">Design Services</a></li>
+                            <li><a  class="a-hover" href="#">Featured On</a></li>
+                            <li><a  class="a-hover" href="#">2018 Holiday Catalog</a></li>
+                            <li><a  class="a-hover" href="#">Shop By Designer</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="information-block footer-block">
-                    <div class="footer-header">
-                        Customer Information
+                <div class="footer-block">
+                    <div class="footer-top">
+                        <div class="footer-top-title">Customer Information</div>
+                        <div class="footer-top-border"></div>
                     </div>
-                    <div class="border"></div>
-                    <div class="info-pan"></div>
+                    <div class="footer-list">
                         <ul class="outline">
-                            <li class="item-footer"><a href="contact-us.html" class="hover-a">Contact Us</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Sale Exclusions</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Shipping & Returns</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Terms & Conditions</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Privacy Policy</a></li>
-                            <li class="item-footer"><a href="#" class="hover-a">Search</a></li>
+                            <li><a  class="a-hover"  class="a-hover" href="#">Contact Us</a></li>
+                            <li><a  class="a-hover" href="#">Sale Exclusions</a></li>
+                            <li><a  class="a-hover" href="#">Shipping & Returns</a></li>
+                            <li><a  class="a-hover" href="#">Terms & Conditions</a></li>
+                            <li><a  class="a-hover" href="#">Privacy Policy</a></li>
+                            <li><a  class="a-hover" href="#">Search</a></li>
                         </ul>
-                </div>
-                <div class="connect-block footer-block">
-                    <div class="footer-header">
-                        Connect
                     </div>
-                    <div class="border"></div>
-                    <form action="#" class="form-mail">
-                        <input type="email" placeholder="Email">
-                        <button type="submit" class="button email-btn">Join</button>
-                    </form>
-                    <ul class="social-connect outline">
-                        <li>
-                            <a href="https://www.facebook.com" target="_blank" class="facebook hover-a">
-                            <img src="image/social/facebook.png" alt="facebook"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com" target="_blank" class="twitter hover-a">
-                            <img src="image/social/twitter.png" alt="twitter"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.ru" target="_blank" class="pinterest hover-a">
-                            <img src="image/social/pinterest.png" alt="Pinterest"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com" target="_blank" class="instagram hover-a">
-                            <img src="image/social/instagram.png" alt="instagram"></a>
-                        </li> 
-                    </ul>
+                </div>
+                <div class="footer-block">
+                    <div class="footer-top">
+                        <div class="footer-top-title">Connect</div>
+                        <div class="footer-top-border"></div>
+                    </div>
+                    <div class="footer-list">
+                        <div class="email-block">
+                            <input class="email-text" type="email" name="email" placeholder="Email">
+                            <button class="button hover-btn btn-join">join</button>
+                        </div>
+                        <div class="footer-list-item social">
+                            <ul class="outline">
+                                <li><a  class="a-hover" href="https://www.facebook.com" target="_blank"><img src="/image/social/facebook.png" alt=""></a></li>
+                                <li><a  class="a-hover" href="https://www.instagram.com" target="_blank"><img src="/image/social/instagram.png" alt=""></a></li>
+                                <li><a  class="a-hover" href="https://www.pinterest.ru" target="_blank"><img src="/image/social/pinterest.png" alt=""></a></li>
+                                <li><a  class="a-hover" href="https://www.twitter.com" target="_blank"><img src="/image/social/twitter.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-lower">
-                <div class="border-lower"></div>
-                <ul class="footer-lower-block outline">
+            <div class="footer-border-bot"></div>
+            <div class="footer-bot">
+                <ul class="footer-list outline">
                     <li class="item-footer rating-block">
-                        <div class="rating-block__title">Company Rating</div> 
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating" value="5">
-                            <label for="star-5" title="Оценка «5»"></label>	
-                            <input type="radio" id="star-4" name="rating" value="4">
-                            <label for="star-4" title="Оценка «4»"></label>    
-                            <input type="radio" id="star-3" name="rating" value="3">
-                            <label for="star-3" title="Оценка «3»"></label>  
-                            <input type="radio" id="star-2" name="rating" value="2">
-                            <label for="star-2" title="Оценка «2»"></label>    
-                            <input type="radio" id="star-1" name="rating" value="1">
-                            <label for="star-1" title="Оценка «1»"></label>
+                        <div class="item-footer__inner">
+                            <div class="rating-area">
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1" title="Оценка «5»"></label>
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «4»"></label>
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «2»"></label>
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «1»"></label>
+                                <input type="radio" id="rating-title" name="rating" value="1" disabled>
+                                <label class="rating-block__title" for="rating-title">Company Rating</label>
+                            </div>
                         </div>
                     </li>
-                    <li class="item-footer center-item">Copyright © 2018 Dlk • Design Life Kids</li>
-                    <li class="item-footer last-item hover-footer-lower"><a href="#">Web Design — Direct Line Development</a></li>
+                    <li class="center-list-item">
+                        Copyright © 2018 Dlk • Design Life Kids
+                    </li>
+                    <li class="last-list-item">
+                        Web Design — Direct Line Development
+                    </li>
                 </ul>
             </div>
-        </div>   
+        </div>
     </footer>
-    <script>
-        var buttonArea = document.getElementsByClassName('rating-area');
-var textCompany = document.getElementsByClassName('rating-block');
-buttonArea[0].onclick = function() {
-    textCompany[0].classList.add("color-style");
-}
-buttonArea[1].onclick = function() {
-    textCompany[0].classList.remove("color-style");
-}
-</script>
 </body>
 </html>
