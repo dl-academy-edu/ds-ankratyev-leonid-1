@@ -35,15 +35,16 @@
 
 .carusel-item {
     cursor: pointer;
+    border-bottom: 4px solid #D6CAC2;
+    width: 30px;
 }
 
 .carusel ul li {
     margin-bottom: 11px;
 }
 
-.carusel-item {
-    border-bottom: 4px solid #D6CAC2;
-    width: 30px;
+.active {
+    border-bottom: 4px solid rgba(30, 6, 6, 0.6);
 }
 
 .banner-text {
