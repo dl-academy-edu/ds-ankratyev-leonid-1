@@ -1,263 +1,284 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/index.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/style-header-footer.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-        <title>Kid Shop</title>
-    </head>
-    <body>
-        <header class="header container">
-            <img src="image/logo/logo.svg" alt="logo" class="header-logo">
-            <nav class="header-nav">
-                <ul class="outline header-list">
-                    <li class="header-item"><a href="blog.html" class="hover-a">blog</a></li>
-                    <li class="header-item"><a href="catalog.html" class="hover-a">Catalog</a></li>
-                    <li class="header-item"><a href="#" class="hover-a">About us</a></li>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/css/style-header-footer.min.css">
+    <link rel="stylesheet" href="/css/index.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="/image/logo/logo.svg" alt="logo">
+            </div>
+            <div class="header-nav">
+                <ul class="outline">
+                    <li><a  class="a-hover" href="/blog.html">blog</a></li>
+                    <li><a  class="a-hover" href="/catalog.html">catalog</a></li>
+                    <li><a  class="a-hover" href="#">about us</a></li>
                 </ul>
-            </nav>
-            <img src="image/svg/search.svg" alt="search" class="search hover-a">
-            <a class="contact-btn hover-a" href="contact-us.html">Contact us</a>
-        </header>
+            </div>
+            <div class="search-contact">
+                <div class="search">
+                    <img class="a-hover" src="/image/svg/search.svg" alt="search">
+                </div>
+                <div class="contact">
+                    <a  class="a-hover" href="/contact-us.html">contact us</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-            <section class="banner container">
-                <div class="banner-item">
-                    <img src="image/banner/monster-banner.png" alt="monster-banner" class="banner-png">
-                    <div class="banner-title">
-                        <h1>THE OOH NOO COLLECTION</h1>
-                        <div class="crimson text-size">Designed in Slovenia</div>
-                        <button class="button banner-btn banner-js" id="my-btn">EXPLORE NOW</button>
-                    </div>
-                </div>
-                <div class="banner-text"> Free (continental) USA shipping on all orders of $100 USD or more!
-                </div>
-            </section>
-            <section class="category container">
-                <h2 class="category-title">Category Products</h2>
-                <ul class="category-item outline">
-                    <li class="apparel">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/apparelkids.jpg" alt="APPAREL KIDS">
-                            <h3 class="apparel-title">APPAREL KIDS</h3>
-                        </a>
-                    </li>
-                    <li class="shop">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/holidayshop.jpg" alt="HOLIDAY SHOP">
-                            <h3 class="shop-title">HOLIDAY SHOP</h3>
-                        </a>
-                    </li>
-                    <li class="toys">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/toys.jpg" alt="TOYS">
-                            <h3 class="toys-title">TOYS</h3>
-                        </a>
-                    </li>
-                    <li class="accessories">
-                        <a class="category-hover" href="#">
-                            <img src="image/category/accessories.jpg" alt="ACCESSORIES">
-                            <h3 class="accessories-title">ACCESSORIES</h3>
-                        </a>
-                    </li>
-                </ul>
-                <div class="swipe-footer">
-                    <ul class="swipe-btn outline">
-                        <li>
-                            <button class="swipe swipe-left"><img src="/image/button/button-left.png" alt="">
-                                </button>
-                            <button class="swipe swipe-right"><img src="/image/button/button-right.png" alt="">
-                                </button>
-                        </li>
+        <section class="banner container">
+            <div class="banner-item">
+                <img src="image/banner/monster-banner.png" alt="monster-banner" class="banner-png">
+                <div class="carusel">
+                    <div class="carusel-number">01</div>
+                    <ul class="outline">
+                        <li class="carusel-item active"></li>
+                        <li class="carusel-item"></li>
+                        <li class="carusel-item"></li>
+                        <li class="carusel-item"></li>
                     </ul>
-                    <div class="swipe-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.
-                    </div>
                 </div>
-            </section>
-            <section class="delivery container">
-                <img src="image/delivery/girl.jpg" alt="Delivery" class="">
-                <div class="delivery-item">
-                        <h2 class="deli-title">Delivery</h2>
-                            <div class="form_radio_btn crimson source source-1">
-                                <input id="radio-1" type="radio" name="radio" value="1" checked>
-                                <label for="radio-1" class="radio-1">Delivery</label>
-                            </div>
-                            <div class="form_radio_btn crimson source source-2">
-                                <input id="radio-2" type="radio" name="radio" value="2">
-                                <label for="radio-2">Guarantee</label>
-                            </div>
-                            <div class="form_radio_btn crimson source source-3">
-                                <input id="radio-3" type="radio" name="radio" value="3">
-                                <label for="radio-3">Credit</label>
-                            </div>
-                        <div class="target target-1">
-                            <p> Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                            <p>What started as an outlet to deal     with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                        </div>
-                        <div class="target target-2">
-                            <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-                        </div>
-                        <div class="target target-3">
-                            <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-                        </div>
-                    <a class="button deli-btn" href="#">Learn more</a>
+                <div class="banner-title">
+                    <h1>THE OOH NOO COLLECTION</h1>
+                    <div class="crimson text-size">Designed in Slovenia</div>
+                    <button class="button banner-btn hover-btn banner-js" id="my-btn">EXPLORE NOW</button>
                 </div>
-            </section>
-            <section class="brands container">
-                <h2 class="hidden">brands</h2>
-                <ul class="brands-img outline">
-                    <li><img src="image/brands/mail.brand.png" alt="mail" class="mail"></li>
-                    <li><img src="image/brands/apple.brand.png" alt="apple" class="apple"></li>
-                    <li><img src="image/brands/eltex.brand.png" alt="eltex" class="eltex"></li>
-                    <li><img src="image/brands/owox.brand.png" alt="owox" class="owox"></li>
+            </div>
+            <div class="banner-text"> Free (continental) USA shipping on all orders of $100 USD or more!
+            </div>
+        </section>
+        <section class="category container">
+            <h2 class="category-title">Category Products</h2>
+            <ul class="category-item outline">
+                <li class="apparel">
+                    <a  class="category-hover" class="category-hover" href="#">
+                        <img src="image/category/apparelkids.jpg" alt="APPAREL KIDS">
+                        <h3 class="apparel-title">APPAREL KIDS</h3>
+                    </a>
+                </li>
+                <li class="shop">
+                    <a  class="category-hover" class="category-hover" href="#">
+                        <img src="image/category/holidayshop.jpg" alt="HOLIDAY SHOP">
+                        <h3 class="shop-title">HOLIDAY SHOP</h3>
+                    </a>
+                </li>
+                <li class="toys">
+                    <a  class="category-hover" class="category-hover" href="#">
+                        <img src="image/category/toys.jpg" alt="TOYS">
+                        <h3 class="toys-title">TOYS</h3>
+                    </a>
+                </li>
+                <li class="accessories">
+                    <a  class="category-hover" class="category-hover" href="#">
+                        <img src="image/category/accessories.jpg" alt="ACCESSORIES">
+                        <h3 class="accessories-title">ACCESSORIES</h3>
+                    </a>
+                </li>
+            </ul>
+            <div class="swipe-footer">
+                <ul class="swipe-btn outline">
+                    <li>
+                        <button class="swipe swipe-left"><img src="/image/button/button-left.png" alt="left">
+                            </button>
+                        <button class="swipe swipe-right"><img src="/image/button/button-right.png" alt="right">
+                            </button>
+                    </li>
                 </ul>
-            </section>
-            <section class="description container">
-                <div class="аbout">
-                    <h2 class="about-title">Design Life Kids</h2>
-                    <div  class="text-about">
-                        <div class="crimson min-title">
-                            About Us
-                        </div>
-                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                        <a class="button about-btn" href="catalog.html">buy now</a>
-                    </div>
+                <div class="swipe-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.
                 </div>
-                <div class="map">
-                    <h2 class="map-title">Contacts</h2>
-                    <div class="text-map">
-                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            </div>
+        </section>
+        <section class="delivery container">
+            <img src="image/delivery/girl.jpg" alt="Delivery" class="">
+            <div class="delivery-item">
+                    <h2 class="deli-title">Delivery</h2>
+                        <div class="form_radio_btn crimson source source-1">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1" class="radio-1">Delivery</label>
+                        </div>
+                        <div class="form_radio_btn crimson source source-2">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">Guarantee</label>
+                        </div>
+                        <div class="form_radio_btn crimson source source-3">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">Credit</label>
+                        </div>
+                    <div class="target target-1">
+                        <p> Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                        <p>What started as an outlet to deal     with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
                     </div>
-                    <div class="map-yandex">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3534ff61bb483e3fc1c54ab2f9e9cff98fcc045facc9ddce4b5888fef6acb05b&amp;source=constructor" width="483" height="200" frameborder="0"></iframe>
+                    <div class="target target-2">
+                        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
                     </div>
+                    <div class="target target-3">
+                        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+                    </div>
+                <a class="button hover-btn deli-btn" href="#">Learn more</a>
+            </div>
+        </section>
+        <section class="brands container">
+            <h2 class="hidden">brands</h2>
+            <ul class="brands-img outline">
+                <li><img src="image/brands/mail.brand.png" alt="mail" class="mail"></li>
+                <li><img src="image/brands/apple.brand.png" alt="apple" class="apple"></li>
+                <li><img src="image/brands/eltex.brand.png" alt="eltex" class="eltex"></li>
+                <li><img src="image/brands/owox.brand.png" alt="owox" class="owox"></li>
+            </ul>
+        </section>
+        <section class="description container">
+            <div class="аbout">
+                <h2 class="about-title">Design Life Kids</h2>
+                <div  class="text-about">
+                    <div class="crimson min-title">
+                        About Us
+                    </div>
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <a class="button hover-btn about-btn" href="catalog.html">buy now</a>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container footer-container">
-                <div class="footer-nav">
-                    <div class="nav-block footer-block">
-                        <div class="footer-header">
-                            Navigation
-                        </div>
-                        <div class="border"></div>
-                        <div class="nav-pan">
-                            <ul class="outline">
-                                <li class="item-footer"><a href="#" class="hover-a">About Us</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">blog</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Design Services</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Featured On</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">2018 Holiday Catalog</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Shop By Designer</a></li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="map">
+                <h2 class="map-title">Contacts</h2>
+                <div class="text-map">
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                </div>
+                <div class="map-yandex">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3534ff61bb483e3fc1c54ab2f9e9cff98fcc045facc9ddce4b5888fef6acb05b&amp;source=constructor" width="483" height="200" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="footer-block">
+                    <div class="footer-top">
+                        <div class="footer-top-title">Navigation</div>
+                        <div class="footer-top-border"></div>
                     </div>
-                    <div class="information-block footer-block">
-                        <div class="footer-header">
-                            Customer Information
-                        </div>
-                        <div class="border"></div>
-                        <div class="info-pan"></div>
-                            <ul class="outline">
-                                <li class="item-footer"><a href="contact-us.html" class="hover-a">Contact Us</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Sale Exclusions</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Shipping & Returns</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Terms & Conditions</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Privacy Policy</a></li>
-                                <li class="item-footer"><a href="#" class="hover-a">Search</a></li>
-                            </ul>
-                    </div>
-                    <div class="connect-block footer-block">
-                        <div class="footer-header">
-                            Connect
-                        </div>
-                        <div class="border"></div>
-                        <form action="#" class="form-mail">
-                            <input type="email" placeholder="Email">
-                            <button type="submit" class="button email-btn">Join</button>
-                        </form>
-                        <ul class="social-connect outline">
-                            <li>
-                                <a href="https://www.facebook.com" target="_blank" class="facebook hover-a">
-                                <img src="image/social/facebook.png" alt="facebook"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.twitter.com" target="_blank" class="twitter hover-a">
-                                <img src="image/social/twitter.png" alt="twitter"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.pinterest.ru" target="_blank" class="pinterest hover-a">
-                                <img src="image/social/pinterest.png" alt="Pinterest"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com" target="_blank" class="instagram hover-a">
-                                <img src="image/social/instagram.png" alt="instagram"></a>
-                            </li> 
+                    <div class="footer-list">
+                        <ul class="outline">
+                            <li><a  class="a-hover" href="#">About Us</a></li>
+                            <li><a  class="a-hover" href="/blog.html">Blog</a></li>
+                            <li><a  class="a-hover" href="#">Design Services</a></li>
+                            <li><a  class="a-hover" href="#">Featured On</a></li>
+                            <li><a  class="a-hover" href="#">2018 Holiday Catalog</a></li>
+                            <li><a  class="a-hover" href="#">Shop By Designer</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer-lower">
-                    <div class="border-lower"></div>
-                    <ul class="footer-lower-block outline">
-                        <li class="item-footer rating-block">
-                            <div class="rating-block__title">Company Rating</div> 
+                <div class="footer-block">
+                    <div class="footer-top">
+                        <div class="footer-top-title">Customer Information</div>
+                        <div class="footer-top-border"></div>
+                    </div>
+                    <div class="footer-list">
+                        <ul class="outline">
+                            <li><a  class="a-hover"  class="a-hover" href="/contact-us.html">Contact Us</a></li>
+                            <li><a  class="a-hover" href="#">Sale Exclusions</a></li>
+                            <li><a  class="a-hover" href="#">Shipping & Returns</a></li>
+                            <li><a  class="a-hover" href="#">Terms & Conditions</a></li>
+                            <li><a  class="a-hover" href="#">Privacy Policy</a></li>
+                            <li><a  class="a-hover" href="#">Search</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-block">
+                    <div class="footer-top">
+                        <div class="footer-top-title">Connect</div>
+                        <div class="footer-top-border"></div>
+                    </div>
+                    <div class="footer-list">
+                        <div class="email-block">
+                            <input class="email-text" type="email" name="email" placeholder="Email">
+                            <button class="button hover-btn btn-join">join</button>
+                        </div>
+                        <div class="footer-list-item social">
+                            <ul class="outline">
+                                <li><a  class="a-hover" href="https://www.facebook.com" target="_blank"><img src="/image/social/facebook.png" alt="facebook"></a></li>
+                                <li><a  class="a-hover" href="https://www.instagram.com" target="_blank"><img src="/image/social/instagram.png" alt="instagram"></a></li>
+                                <li><a  class="a-hover" href="https://www.pinterest.ru" target="_blank"><img src="/image/social/pinterest.png" alt="pinterest"></a></li>
+                                <li><a  class="a-hover" href="https://www.twitter.com" target="_blank"><img src="/image/social/twitter.png" alt="twitter"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-border-bot"></div>
+            <div class="footer-bot">
+                <ul class="footer-list outline">
+                    <li class="item-footer rating-block">
+                        <div class="item-footer__inner">
                             <div class="rating-area">
-                                <input type="radio" id="star-5" name="rating" value="5">
-                                <label for="star-5" title="Оценка «5»"></label>	
-                                <input type="radio" id="star-4" name="rating" value="4">
-                                <label for="star-4" title="Оценка «4»"></label>    
-                                <input type="radio" id="star-3" name="rating" value="3">
-                                <label for="star-3" title="Оценка «3»"></label>  
-                                <input type="radio" id="star-2" name="rating" value="2">
-                                <label for="star-2" title="Оценка «2»"></label>    
                                 <input type="radio" id="star-1" name="rating" value="1">
-                                <label for="star-1" title="Оценка «1»"></label>
+                                <label for="star-1" title="Оценка «5»"></label>
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2" title="Оценка «4»"></label>
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3" title="Оценка «3»"></label>
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4" title="Оценка «2»"></label>
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5" title="Оценка «1»"></label>
+                                <input type="radio" id="rating-title" name="rating" value="1" disabled>
+                                <label class="rating-block__title" for="rating-title">Company Rating</label>
                             </div>
-                        </li>
-                        <li class="item-footer center-item">Copyright © 2018 Dlk • Design Life Kids</li>
-                        <li class="item-footer last-item hover-footer-lower"><a href="#">Web Design — Direct Line Development</a></li>
-                    </ul>
-                </div>
-            </div>   
-        </footer>
-        <div class="popup-overlay"></div>
-        <div class="popup-form">
-            <h1 class="hidden">Modal Window</h1>
-            <button class="popup-close"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
-                </svg>
-                </button>
-            <form action="" method="POST" class="contact-form">
-                <div class="block-one">
-                    <label for="name">Name</label>
-                    <input required type="text" id="name">
-                </div>
-                <div class="block-two">
-                    <div class="item-one">
-                        <label for="phone">Phone</label>
-                        <input required type="tel" id="phone">
-                    </div>
-                    <div class="item-two">
-                        <label for="emailform">Email</label>
-                        <input required type="email@" id="emailform">
-                    </div>
-                </div>
-                <div class="comment">
-                    <label for="message">Message</label>
-                    <textarea name="text" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div class="check-agree">
-                    <input required type="checkbox" id="agree">
-                    <label for="agree">By clicking on the button, you consent to the processing of your personal data</label>
-                </div>
-                    <button class="btn-submit">submit</button>
-            </form>
+                        </div>
+                    </li>
+                    <li class="center-list-item">
+                        Copyright © 2018 Dlk • Design Life Kids
+                    </li>
+                    <li class="last-list-item">
+                        Web Design — Direct Line Development
+                    </li>
+                </ul>
+            </div>
         </div>
-        <script src="/js/js.js"></script>
-    </body>
-    </html>
+    </footer>
+    <div class="popup-overlay"></div>
+    <div class="popup-form">
+        <h1 class="hidden">Modal Window</h1>
+        <button class="popup-close"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
+            </svg>
+            </button>
+        <form action="" method="POST" class="contact-form">
+            <div class="block-one">
+                <label for="name">Name</label>
+                <input required type="text" id="name">
+            </div>
+            <div class="block-two">
+                <div class="item-one">
+                    <label for="phone">Phone</label>
+                    <input required type="tel" id="phone">
+                </div>
+                <div class="item-two">
+                    <label for="emailform">Email</label>
+                    <input required type="email@" id="emailform">
+                </div>
+            </div>
+            <div class="comment">
+                <label for="message">Message</label>
+                <textarea name="text" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="check-agree">
+                <input required type="checkbox" id="agree">
+                <label for="agree">By clicking on the button, you consent to the processing of your personal data</label>
+            </div>
+                <button class="btn-submit hover-btn">submit</button>
+        </form>
+    </div>
+    <script src="/js/js.js"></script>
+</body>
+</html>
